@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biodata Saya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('profil(1).jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #4a1a2c;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    /* Animasi muncul */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .biodata-box {
+      max-width: 900px;
+      margin: 80px auto;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(12px);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(255, 192, 203, 0.4);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .profile-photo img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 3px solid #ffb6c1;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .biodata-content {
+      flex: 1;
+    }
+
+    h2 {
+      text-align: center;
+      color: #c83e6f;
+      font-size: 30px;
+      margin-top: 0;
+    }
+
+    .biodata p {
+      margin: 12px 0;
+      font-size: 17px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #a22c58;
+    }
+
+    .nav-buttons {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .nav-btn {
+      display: inline-block;
+      background-color: #f9a8c0;
+      color: white;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 6px 20px rgba(249, 168, 192, 0.5);
+    }
+
+    .nav-btn:hover {
+      background-color: #ff79a7;
+      transform: translateY(-2px);
+    }
+
+    @media screen and (max-width: 700px) {
+      .biodata-box {
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile-photo img {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="biodata-box fade-in">
+    <div class="profile-photo">
+      <img src="foto.jpg" alt="Foto Farah Anguru">
+    </div>
+    <div class="biodata-content">
+      <h2>Biodata Saya</h2>
+      <div class="biodata">
+        <p><span class="label">Nama:</span> Farah Anguru</p>
+        <p><span class="label">NPM:</span> E1G022074</p>
+        <p><span class="label">Program Studi:</span> Teknologi Industri Pertanian</p>
+        <p><span class="label">Tempat, Tanggal Lahir:</span> Palembang, 30 Januari 2005</p>
+        <p><span class="label">Alamat:</span> Jl. Fatmawati 1</p>
+        <p><span class="label">Email:</span> Uchafarah30@gmail.com</p>
+        <p><span class="label">No. HP:</span> 082289813968</p>
+        <p><span class="label">Hobi:</span> Nonton Anime, Mabar ML, Makeup</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-buttons fade-in" style="animation-delay: 0.5s;">
+    <a href="luaran.html" class="nav-btn">← Kembali</a>
+    <a href="jadwal.html" class="nav-btn">Lanjut →</a>
+  </div>
+
+</body>
+</html>

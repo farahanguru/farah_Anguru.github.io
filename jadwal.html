@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jadwal Kegiatan</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('dalam(1).jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 30px;
+      color: #4a1a2c;
+      overflow-x: hidden;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+      color: #c14b7d;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .day-box {
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3);
+      width: 45%;
+      min-width: 300px;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .day-box h3 {
+      margin-top: 0;
+      color: #b03b6d;
+      font-size: 22px;
+    }
+
+    .day-box p {
+      margin: 10px 0;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 40px auto 0;
+      text-align: center;
+      color: white;
+      background-color: #f191af;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 6px 20px rgba(255, 168, 186, 0.5);
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .back-link:hover {
+      background-color: #e96f99;
+      transform: translateY(-3px);
+    }
+
+    /* Animasi */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .day-box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>📚 Jadwal Mata Kuliah Semester 6</h2>
+    <div class="grid">
+      <div class="day-box">
+        <h3>🌸 Senin</h3>
+        <p>💻 Komputer & Pemrograman: R.20 – 08.00–09.40</p>
+        <p>⚙️ Rekayasa Proses: R.20 – 10.00–11.40</p>
+        <p>📝 Karya Tulis Ilmiah: R.4 – 14.00–15.40</p>
+        <p>🍱 Teknologi Makanan Tradisional: R.20 – 16.00–17.40</p>
+      </div>
+
+      <div class="day-box">
+        <h3>🌸 Selasa</h3>
+        <p> 📝 Coass Fisika: 08.00 - 10.00</p>
+        <p>☕ Kewirausahaan: R.10 – 12.00</p>
+       
+      </div>
+
+      <div class="day-box">
+        <h3>🌸 Rabu</h3>
+        <p>🗣️ Bahasa Inggris Akademik: R.23 – 10.00–11.40</p>
+        <p> 🧠 Coass TTCK: 12.00 - 14.00</p>
+        <p>🧠 Analisis Keputusan: R.4 – 14.00–15.40</p>
+      </div>
+
+      <div class="day-box">
+        <h3>🌸 Kamis</h3>
+        <p>🧘‍♀️Just Chilling: 06.30–24.00</p>
+      </div>
+
+      <div class="day-box">
+        <h3>🌸 Jumat</h3>
+        <p>🌿 Teknologi Hasil Perkebunan – R.9 – 08.00–09.40</p>
+        <p>🧼 K3: R.6 – 14.00 - 16.00</p>
+      </div>
+
+      <div class="day-box">
+        <h3>🌸 Sabtu - minggu <h/>
+        <p>💖 Istirahat</p>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="biodata.html" class="back-link">← Kembali ke Biodata</a>
+    </div>
+  </div>
+
+</body>
+</html>
